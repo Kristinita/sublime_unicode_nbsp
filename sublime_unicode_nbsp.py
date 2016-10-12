@@ -104,12 +104,10 @@ class HighlightUnicodeListener(DeferedViewListener):
         u'\xbf' : '\x27',     # c-single quote
         u'\xa8' : '',         # modifier - under curve
         u'\xb1' : '',         # modifier - under line
-        u'\xbf' : '',         # modifier - under line
         u'\u200b' : '',       # Zero width space
         u'\u00ad' : '',       # Soft Hyphen
         u'\u2028' : '',       # Line separator
     }
-
 
     def __init__(self):
         super(HighlightUnicodeListener, self).__init__()

@@ -96,17 +96,17 @@ class HighlightUnicodeListener(DeferedViewListener):
         u'\x99' : ' ',
         u'\xa0' : ' ',
         u'\xa6' : '|',        # Split vertical bar
-        u'\xab' : '<<',       # Double less than
-        u'\xbb' : '>>',       # Double greater than
         u'\xbc' : '1/4',      # one quarter
         u'\xbd' : '1/2',      # one half
         u'\xbe' : '3/4',      # three quarters
         u'\xbf' : '\x27',     # c-single quote
         u'\xa8' : '',         # modifier - under curve
         u'\xb1' : '',         # modifier - under line
+        u'\xbf' : '',         # modifier - under line
         u'\u200b' : '',       # Zero width space
-        u'\u00ad' : '',       # Soft Hyphen
-        u'\u2028' : '',       # Line separator
+   		u'\u00ad' : '',       # Soft Hyphen
+   		u'\u2028' : '',		  # Line separator
+   		u'\u007f' : '',       # <control>
     }
 
     def __init__(self):
